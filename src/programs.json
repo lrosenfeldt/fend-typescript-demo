@@ -1,0 +1,46 @@
+[
+  {
+    "id": "0",
+    "title": "100 Push-Ups Challenge",
+    "properties": {
+      "difficulty": "LEICHT",
+      "weeks": 6,
+      "focus": "KRAFT"
+    },
+    "days": 43,
+    "description": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen."
+  },
+  {
+    "id": "1",
+    "title": "Stretch and Relax",
+    "properties": {
+      "difficulty": "MITTEL",
+      "weeks": 2,
+      "focus": "MOBILITÄT"
+    },
+    "days": 14,
+    "description": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen."
+  },
+  {
+    "id": "2",
+    "title": "Yoga Journey",
+    "properties": {
+      "difficulty": "LEICHT",
+      "weeks": 1,
+      "focus": "KONZENTRATION"
+    },
+    "days": 7,
+    "description": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen."
+  },
+  {
+    "id": "3",
+    "title": "Pilates Einführung",
+    "properties": {
+      "difficulty": "SCHWER",
+      "weeks": 3,
+      "focus": "KRAFT"
+    },
+    "days": 21,
+    "description": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen."
+  }
+]

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-1 {
+    @apply bg-gradient-to-br from-orange-300 to-pink-300;
+  }
+
+  .gradient-2 {
+    @apply bg-gradient-to-br from-teal-300 to-yellow-200;
+  }
+
+  .gradient-3 {
+    @apply bg-gradient-to-br from-green-300 to-blue-600;
+  }
+}
+
+body {
+  @apply bg-gray-800;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+#root {
+  @apply max-w-xs;
+  @apply p-4;
+  @apply rounded;
+  @apply w-full;
+}
