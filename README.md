@@ -90,13 +90,13 @@ yarn add -D @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/ty
 ```sh
 yarn graphql-codegen init
 # interaktiv
-? What type of application are you building? Application built with React
-? Where is your schema?: https://api-eu-central-1.graphcms.com/v2/cl3d189141hkk01xpcesz7a2l/master # hier muss euer GraphQL-Endpunkt rein
-? Pick plugins: # einfach ja, die Plugins haben wir vorher schon ausgewählt
-? Where to write the output: src/generated/graphql.tsx
-? Do you want to generate an introspection file? Yes
-? How to name the config file? codegen.yml
-? What script in package.json should run the codegen? codegen
+# ? What type of application are you building? Application built with React
+# ? Where is your schema?: https://api-eu-central-1.graphcms.com/v2/cl3d189141hkk01xpcesz7a2l/master # hier muss euer GraphQL-Endpunkt rein
+# ? Pick plugins: # einfach ja, die Plugins haben wir vorher schon ausgewählt
+# ? Where to write the output: src/generated/graphql.tsx
+# ? Do you want to generate an introspection file? Yes
+# ? How to name the config file? codegen.yml
+# ? What script in package.json should run the codegen? codegen
 ```
 
 3. Füge einen `graphql/` mit `.graphql`-Files mit euren Queries hinzu. Alle eure Queries landen dann in diesen Files. Codegen generiert alle Types und Hooks. Ihr müsst nur noch importieren und nichts doppelt pflegen.
