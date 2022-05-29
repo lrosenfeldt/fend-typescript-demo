@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import React, { useState } from "react";
 import LoadingSpinner from "../components/loadingSpinner";
+import PageHeader from "../components/pageHeader";
 import ProgramCard from "../components/programCard";
 import QueryError from "../components/queryError";
 import { GET_ALL_PROGRAMS } from "../lib/queries";
@@ -12,9 +13,7 @@ const Index = () => {
 
   return (
     <>
-      <header>
-        <h1 className="text-4xl text-gray-50 font-bold py-8">Browse</h1>
-      </header>
+      <PageHeader text="Browse" />
       <main>
         <div className="pb-8">
           <input
