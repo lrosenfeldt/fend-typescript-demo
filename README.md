@@ -22,7 +22,7 @@ TypeScript ist eine Programmiersprache, die JavaScript um ein statisches Typ-Sys
 
 ## Warum TypeScript?
 
-TypeScript verbessert vor allem die Developer Experience👩‍💻
+TypeScript verbessert vor allem die Developer Experience 👩‍💻 und findet nebenbei Bugs🐛!
 
 - 🔥 Autocompletion
 - 🔍 findet Fehler, damit ihr es nicht tun müsst
@@ -47,17 +47,61 @@ const shoutHi = "Hi Mum!   ".trimsEnd().toLocalUppercase();
 console.log(shoutHi);
 ```
 
-### Let's go!
-
-1. Install TypeScript `yarn add --dev typescript`
-2. Setup TypeScript config `yarn tsc --init`
-3. Create [index.ts](./ts-intro/index.ts)
+Check out the [TypeScript Playground](https://www.typescriptlang.org/play)!
 
 ## Part II - React & TypeScript ❤️
 
-1. Install TypeScript `yarn add --dev typescript`
-2. Setup TypeScript config `yarn typescript --init`
-3. Goto [index.ts](./ts-intro/index.ts)
+### Migration zu TypeScript
+
+Eigentlich alle modernen Bundler (parcel, webpack, vite, ...) können ein Projekt direkt mit TypeScript aufsetzen. Nachträglich ist etwas mehr arbeitet erforderlich.
+
+Wie man ein React + Vite Projekt zu TypeScript migriert:
+
+1. Installiere TypeScript als Dev-Dependency: `yarn add -D typescript`
+
+2. Füge die nötigen Config-Files hinzu. Diese können aus .config kopiert werden. ⚠️ `tsconfig.json` und `tsconfig.node.json` müssen im Root Verzeichnis landen (wo auch euer `package.json` liegt). `vite-env.d.ts` muss in `src/` liegen.
+
+```sh
+cp .configs/tsconfig.json .configs/tsconfig.node.json .
+cp .configs/vite-end.d.ts src/
+```
+
+3. React ist nicht in TypeScript geschrieben. Die Types kann man sich aber manuell vom [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped/) holen. `yarn add -D @types/react`
+
+### Let's Go!
+
+Damit VS Code etwas als TypeScript-Code erkennt, muss die Datei-Endung geändert werden:
+
+`.js` -> `.ts`<br/>
+`.jsx` -> `.tsx`
+
+### GraphQL Codegen
+
+In GraphQL sind bereits definiert, sodass die Types für TypeScript (und weitere Programmiersprachen mit statistischen Typen) automatisch erzeugt werden können. Der Standard dafür ist inzwischen [GraphQL Code Generator](https://www.graphql-code-generator.com/). Ein Tutorial für React, Apollo, Typescript findet ihr auch auf [der Webseite](https://www.graphql-code-generator.com/plugins/typescript-react-apollo).
+
+1. GraphQL-Code-Generator installieren für TypeScript, React, Apollo:
+
+```sh
+yarn add -D @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-react-apollo @graphql-codegen/introspection
+```
+
+2. GraphQL-Code-Generator initialisieren:
+
+```sh
+yarn graphql-codegen init
+# interaktiv
+? What type of application are you building? Application built with React
+? Where is your schema?: https://api-eu-central-1.graphcms.com/v2/cl3d189141hkk01xpcesz7a2l/master # hier muss euer GraphQL-Endpunkt rein
+? Pick plugins: # einfach ja, die Plugins haben wir vorher schon ausgewählt
+? Where to write the output: src/generated/graphql.tsx
+? Do you want to generate an introspection file? Yes
+? How to name the config file? codegen.yml
+? What script in package.json should run the codegen? codegen
+```
+
+3. Füge einen `graphql/` mit `.graphql`-Files mit euren Queries hinzu. Alle eure Queries landen dann in diesen Files. Codegen generiert alle Types und Hooks. Ihr müsst nur noch importieren und nichts doppelt pflegen.
+
+4. **Optional**: Fügt die GraphQL-Extension `mquandalle.graph`zu VS Code für Syntax-Highlighting in `.graphql`-Files hinzu.
 
 ## Ressourcen 📚
 
