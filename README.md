@@ -68,7 +68,7 @@ cp .configs/vite-env.d.ts src/
 
 3. React ist nicht in TypeScript geschrieben. Die Types kann man sich aber manuell vom [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped/) holen. `yarn add -D @types/react`
 
-4. **Optional**: Die Vite-Config kann auch als TypeScript-File angelegt werden. Dazu die Endung von `.js` zu `.ts` ändern. Dann werden allerdings die Types für node benötigt: `yarn add --dev @types/node`.
+4. Die Vite-Config kann als TypeScript-File angelegt. Dazu die Endung von `.js` zu `.ts` ändern. Dann werden allerdings die Types für node benötigt: `yarn add --dev @types/node`.
 
 ### Let's Go!
 
