@@ -1,0 +1,6 @@
+query AllPrograms {
+  programs {
+    id
+    title
+  }
+}

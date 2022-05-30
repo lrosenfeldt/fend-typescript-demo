@@ -5,14 +5,15 @@ import PageHeader from "../components/pageHeader";
 import ProgramCard from "../components/programCard";
 import QueryError from "../components/queryError";
 import SearchButton from "../components/searchButton";
-import { GET_ALL_PROGRAMS } from "../lib/queries";
+import { useAllProgramsQuery } from "../generated/graphql";
+import { pickGradient } from "../lib/helpers";
 
 const Index = () => {
   const [searchValue, setSearchValue] = useState("");
 
-  const { loading, error, data, refetch } = useQuery(GET_ALL_PROGRAMS);
+  const { loading, error, data, refetch } = useAllProgramsQuery();
 
-  const searchRef = useRef(null);
+  const searchRef = useRef<HTMLInputElement>(null);
 
   return (
     <>
@@ -40,14 +41,14 @@ const Index = () => {
           data.programs.map((program, index) => (
             <React.Fragment key={program.id}>
               <ProgramCard
-                className={`gradient-${(index % 3) + 1}`}
                 title={program.title}
+                className={pickGradient(index)}
               />
             </React.Fragment>
           ))}
       </main>
       <SearchButton
-        onClick={() => {
+        onClick={(e) => {
           if (searchRef.current) {
             searchRef.current.focus();
           }

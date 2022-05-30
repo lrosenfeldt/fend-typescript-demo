@@ -1,4 +1,8 @@
-const SearchButton = ({ onClick }) => {
+type Props = {
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+const SearchButton = ({ onClick }: Props) => {
   return (
     <button
       className="sticky rounded-full h-12 w-12 bg-gray-50 left-0 bottom-0 flex justify-center items-center shadow-lg text-gray-900"

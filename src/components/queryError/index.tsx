@@ -1,4 +1,9 @@
-const QueryError = ({ children, refetch }) => {
+type Props = {
+  children: string;
+  refetch: () => void;
+};
+
+const QueryError = ({ children, refetch }: Props) => {
   return (
     <div className="flex justify-center items-center text-gray-50 h-10">
       <h2 className="text-2xl">{children}</h2>
