@@ -18,15 +18,16 @@
 
 body {
   @apply bg-gray-800;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: auto;
+  @apply flex-col;
+  @apply flex;
+  @apply items-center;
+  @apply w-auto;
 }
 
 #root {
   @apply max-w-xs;
   @apply p-4;
+  @apply relative;
   @apply rounded;
   @apply w-full;
 }
