@@ -63,7 +63,7 @@ Wie man ein React + Vite Projekt zu TypeScript migriert:
 
 ```sh
 cp .configs/tsconfig.json .configs/tsconfig.node.json .
-cp .configs/vite-end.d.ts src/
+cp .configs/vite-env.d.ts src/
 ```
 
 3. React ist nicht in TypeScript geschrieben. Die Types kann man sich aber manuell vom [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped/) holen. `yarn add -D @types/react`
