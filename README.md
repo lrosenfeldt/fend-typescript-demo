@@ -1,18 +1,6 @@
-# Con Cubo is hiring!
+# TypeScript Crashkurs 2022
 
-Homepage: [con-cubo.com/ueber-uns#career](https://www.con-cubo.com/ueber-uns#career)
-
-Fullstack Development (f/m/d) <br/>
-Werkstudent Fullstack Dev. (f/m/d)
-
-Mail: bewerbung@con-cubo.com <br/>
-Phone: <a href="tel:+4943164999296">0431 - 64 99 92 96</a>
-
-## Techstack
-
-React / Next, TypeScript, Styled Components, React Query, Node, Mongo DB, Express, Docker, AWS, Github
-
-# TypeScript Crashkurs
+Dieser Crashkurs wurde im Frühjahr 2022 im Rahmen des Frontend Developer Programms (FEND) von opencampus gehalten. Dieses Repo ist nur noch als Referenz online und wird nicht mehr bearbeitet. Im `main`-Branch findet man den Stand vor der Migrierung zu TypeScript, der Stand nach der Migrierung ist im Branch `talk` festgehalten.
 
 ## Was ist TypeScript?
 
